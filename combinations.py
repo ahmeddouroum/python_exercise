@@ -1,8 +1,7 @@
 def fact(n):
-    result = 1
-    for i in range(2, n + 1):
-        result *= i
-    return result
+    if n == 0 or n == 1:
+        return 1
+    return n * fact(n - 1)
 
 def n_choose_k(n, k):
     if k < 0 or k > n:
